@@ -5,6 +5,9 @@
     <div class="col-3" [ngClass]="isChecked == true ? 'bg-success' : 'bg-danger'">
         Div 2
     </div>
+    <div class="col-3" [ngClass]="addClassName">
+        Div 3
+    </div>
 </div>
 
 <div class="row">
@@ -14,5 +17,8 @@
     </div>
     <div class="col-3">
         <input type="checkbox" name="" id="" [(ngModel)]="isChecked">
+    </div>
+    <div class="col-3">
+        <input type="text" name="" id="" [(ngModel)]="addClassName">
     </div>
 </div>

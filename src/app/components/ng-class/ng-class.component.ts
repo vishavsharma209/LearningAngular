@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 export class NgClassComponent {
       bgClass: string= "bg-success";
       isChecked: boolean = false;
+      addClassName:string="";
 
       changeClass(ClassName : string){
         this.bgClass = ClassName
