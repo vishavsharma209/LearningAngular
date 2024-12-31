@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-3" *ngIf="div1Visible">
+        <div class="bg-success p-3">
+            Div
+        </div>
+    </div>
+</div>
+<div class="row pt-2 text-center">
+    <div class="col-3">
+        <button class="btn btn-danger" (click)="hideDiv()">Hide</button>
+        <button class="btn btn-success" (click)="showDiv()"> Show</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        <input type="text" [(ngModel)]="valueOne" name="" id="">
+        <input type="text" [(ngModel)]="valueTwo" name="" id="">
+    </div>
+</div>
+<div class="row">
+    <div class="col-3" *ngIf="valueOne == valueTwo">
+        <div class="bg-primary p-3">
+            Div2
+        </div>
+    </div>
+</div>

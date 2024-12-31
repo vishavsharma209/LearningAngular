@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-3" [ngClass]="bgClass">
+        Div 1
+    </div>
+    <div class="col-3" [ngClass]="isChecked == true ? 'bg-success' : 'bg-danger'">
+        Div 2
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3 pt-2">
+        <button class="btn btn-danger mx-2" (click)="changeClass('bg-danger')">Show red</button>
+        <button class="btn btn-success" (click)="changeClass('bg-success')">Show green</button>
+    </div>
+    <div class="col-3">
+        <input type="checkbox" name="" id="" [(ngModel)]="isChecked">
+    </div>
+</div>
