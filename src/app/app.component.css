@@ -1,0 +1,36 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .example-events {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #555;
+  }
+
+
+.mdc-text-field--filled {
+  --mdc-outlined-text-field-container-shape: 28px;
+}
+
+.big {
+  font-size: 2em;
+}
+
+mat-form-field {
+  width: 100%;
+  margin: 10px 0;
+}
+    
+.mat-mdc-text-field-wrapper {
+    background: red;
+    border: 5px solid;
+    border-radius: 28px;
+}
+
+  

@@ -1,0 +1,14 @@
+<div class="row p-3" style="z-index: 999;">
+
+    <mat-accordion class="mt-5" >
+    
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" style="background-color: #FFF;">
+          <mat-expansion-panel-header >
+            <mat-panel-title> Patient Demographic </mat-panel-title>
+           
+          </mat-expansion-panel-header>
+          <app-input-field></app-input-field>
+        </mat-expansion-panel>
+        
+      </mat-accordion>
+</div>

@@ -1,2 +1,38 @@
-<h1>Angular Project</h1>
-<app-ng-style></app-ng-style>
+<mat-sidenav-container class="sidenav-container" style="height: 100vh;">
+
+  <mat-sidenav #sidenav mode="side" [opened]="isExpanded" class="sidenav" >
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-list>
+      <mat-list-item>
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon>info</mat-icon>
+        <span>About</span>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon>contact_mail</mat-icon>
+        <span>Contact</span>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+
+  
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button mat-icon-button (click)="toggleSidebar()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My Application</span>
+    </mat-toolbar>
+    <div class="content">
+      <div class="container" style="background-image: linear-gradient(#a8d2d2, white); height: 100vh;">
+
+        <app-patient-demographic></app-patient-demographic>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+  

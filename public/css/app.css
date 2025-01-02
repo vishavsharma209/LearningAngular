@@ -1,0 +1,4 @@
+.mat-rounded-field .mat-mdc-text-field-wrapper {
+    border-radius: 6.25rem !important;
+    border: 1px solid #b4b4ac !important;
+}
